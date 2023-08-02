@@ -1,26 +1,30 @@
 {
   "index": {
     "type": "page",
-    "title": "Nextra",
     "display": "hidden",
     "theme": {
       "layout": "raw"
     }
   },
-  "docs": {
-    "type": "page",
-    "title": "Documentation"
-  },
-  "showcase": {
-    "type": "page",
-    "title": "Showcase"
-  },
   "about": {
     "type": "page",
-    "title": "About",
-    "theme": {
-      "typesetting": "article"
-    }
+    "title": "About"
+  },
+  "join": {
+    "type": "page",
+    "title": "Join"
+  },
+  "support": {
+    "type": "page",
+    "title": "Support"
+  },
+  "services": {
+    "type": "page",
+    "title": "Services"
+  },
+  "media": {
+    "type": "page",
+    "title": "Media"
   },
   "five-boro": {
     "type": "page",
