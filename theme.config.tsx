@@ -52,7 +52,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter()
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s – Nextra'
+        titleTemplate: '%s – One Fact'
       }
     }
   },
@@ -85,7 +85,7 @@ const config: DocsThemeConfig = {
         <meta name="twitter:url" content="https://nextra.site" />
         <meta
           name="og:title"
-          content={title ? title + ' – Nextra' : 'Nextra'}
+          content={title ? title + ' – One Fact' : 'One Fact'}
         />
         <meta name="og:image" content={socialCard} />
         <meta name="apple-mobile-web-app-title" content="Nextra" />
@@ -114,6 +114,12 @@ const config: DocsThemeConfig = {
   //     </a>
   //   )
   // },
+  chat: {
+    link: 'https://onefact.zulipchat.com/'
+  },
+  search: {
+    placeholder: 'Search'
+  },
   editLink: {
     text: 'Edit this page on GitHub →'
   },
