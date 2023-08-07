@@ -45,9 +45,9 @@ const logo = (
 
 const config: DocsThemeConfig = {
   project: {
-    link: 'https://github.com/shuding/nextra'
+    link: 'https://github.com/onefact/new.onefact.org'
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra/tree/main/docs',
+  docsRepositoryBase: 'https://github.com/onefact/new.onefact.org/tree/main/',
   useNextSeoProps() {
     const { asPath } = useRouter()
     if (asPath !== '/') {
