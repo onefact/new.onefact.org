@@ -17,7 +17,8 @@
     "nextra": "latest",
     "nextra-theme-docs": "latest",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "@uwdata/vgplot": "^0.3.3"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.0.1",
