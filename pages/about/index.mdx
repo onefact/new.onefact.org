@@ -8,6 +8,7 @@ tech to validate their deployments of our model against state-of-the-art health
 equity metrics.
 
 ## Projects
+
 [Payless.health](https://payless.health) is a search tool for hospital pricing,
 negotiated rates, and health outcomes in the United States, supported by a grant
 from Brown Institute (Columbia & Stanford) to parse newly-available but incomplete
@@ -33,10 +34,71 @@ Foundation has worked with Columbia University Medical Center to pilot and test.
 
 ## Team
 
-Currently, the project is maintained by [Shu Ding](https://twitter.com/shuding_)
-and [Dimitri Postolov](https://twitter.com/B2o5T). You can check out the full
-list of contributors on
-[GitHub](https://github.com/shuding/nextra/graphs/contributors).
+### One Fact Members
+
+import { Cards, Card } from 'nextra/components';
+import { people } from './team.ts';
+
+<Cards>
+    {people.map( (member) => (
+        <Card
+            image
+            arrow
+            title={member.name}
+            href={`/five-bike/${member.nickname}`}
+        >
+        </Card>
+    ))}
+</Cards>
+
+### Community Advisory Board
+
+import { community } from './team.ts';
+
+<Cards>
+    {community.map( (member) => (
+        <Card
+            image
+            arrow
+            title={member.name}
+            href={`/five-bike/${member.nickname}`}
+        >
+        </Card>
+    ))}
+</Cards>
+
+### Advisory Board
+
+import { board } from './team.ts';
+
+<Cards>
+    {board.map( (member) => (
+        <Card
+            image
+            arrow
+            title={member.name}
+            href={`/five-bike/${member.nickname}`}
+        >
+        </Card>
+    ))}
+</Cards>
+
+### Alumni
+
+import { alumni } from './team.ts';
+
+<Cards>
+    {alumni.map( (member) => (
+        <Card
+            image
+            arrow
+            title={member.name}
+            href={`/five-bike/${member.nickname}`}
+        >
+        </Card>
+    ))}
+</Cards>
+
 
 ## Credits
 
