@@ -38,40 +38,34 @@ Foundation has worked with Columbia University Medical Center to pilot and test.
 
 import { Cards } from 'nextra/components';
 import { CardContents } from '/components/card';
-import { people } from './team.js';
+import * as team from '/public/data/team.jsx';
 
 <Cards>
-    {people.map( (member) => (
+    {team.people.map( (member) => (
         <CardContents member={member}/>
     ))}
 </Cards>
 
 ### Community Advisory Board
 
-import { community } from './team.js';
-
 <Cards>
-    {community.map( (member) => (
+    {team.community.map( (member) => (
         <CardContents member={member}/>
     ))}
 </Cards>
 
 ### Advisory Board
 
-import { board } from './team.js';
-
 <Cards>
-    {board.map( (member) => (
+    {team.board.map( (member) => (
         <CardContents member={member}/>
     ))}
 </Cards>
 
 ### Alumni
 
-import { alumni } from './team.js';
-
 <Cards>
-    {alumni.map( (member) => (
+    {team.alumni.map( (member) => (
         <CardContents member={member}/>
     ))}
 </Cards>
