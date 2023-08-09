@@ -11,6 +11,7 @@ const withNextra = nextra({
 })
 
 export default withNextra({
+  experimental: { appDir: true },
   reactStrictMode: true,
   eslint: {
     // Eslint behaves weirdly in this monorepo.
@@ -28,6 +29,7 @@ export default withNextra({
       permanent: true
     }
   ],
+  // experimental: { appDir: true },
   webpack(config) {
     const allowedSvgRegex = /components\/icons\/.+\.svg$/
 
@@ -40,6 +42,7 @@ export default withNextra({
       test: allowedSvgRegex,
       use: ['@svgr/webpack']
     })
+    config.experiments = { ...config.experiments, topLevelAwait: true }
     return config
   }
 })
