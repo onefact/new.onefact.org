@@ -99,7 +99,7 @@ export const people = [
     title: "Chief of Global Health Informatics"
   },
   {
-    nickname: "alex",
+    nickname: "alex-hradecky",
     name: "Alex Hradecky",
     email: "alex@onefact.org",
     links: {
@@ -150,7 +150,7 @@ export const people = [
   },
   {
     nickname: "francesca",
-    name: "Francesca Cavuoti (they/them)",
+    name: "Francesca Cavuoti",
     email: "francesca@onefact.org",
     links: {
       linkedin: "http://www.linkedin.com/in/francesca-cavuoti"
@@ -377,7 +377,7 @@ export const alumni = [
     title: "Internship, Housing Equity"
   },
   {
-    nickname: "alex",
+    nickname: "alex-pesendorfer",
     name: "Alex Pesendorfer",
     email: "",
     links: {
@@ -420,7 +420,7 @@ export const alumni = [
     title: "Internship, Biomedical Research for Reproductive Health"
   },
   {
-    nickname: "uche-aneni",
+    nickname: "uche",
     name: "Uche Aneni",
     email: "",
     links: {

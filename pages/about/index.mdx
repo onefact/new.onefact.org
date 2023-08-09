@@ -36,18 +36,13 @@ Foundation has worked with Columbia University Medical Center to pilot and test.
 
 ### One Fact Members
 
-import { Cards, Card } from 'nextra/components';
+import { Cards } from 'nextra/components';
+import { CardContents } from '/components/card';
 import { people } from './team.js';
 
 <Cards>
     {people.map( (member) => (
-        <Card
-            image
-            arrow
-            title={member.name}
-            href={`/five-bike/${member.nickname}`}
-        >
-        </Card>
+        <CardContents member={member}/>
     ))}
 </Cards>
 
@@ -57,13 +52,7 @@ import { community } from './team.js';
 
 <Cards>
     {community.map( (member) => (
-        <Card
-            image
-            arrow
-            title={member.name}
-            href={`/five-bike/${member.nickname}`}
-        >
-        </Card>
+        <CardContents member={member}/>
     ))}
 </Cards>
 
@@ -73,13 +62,7 @@ import { board } from './team.js';
 
 <Cards>
     {board.map( (member) => (
-        <Card
-            image
-            arrow
-            title={member.name}
-            href={`/five-bike/${member.nickname}`}
-        >
-        </Card>
+        <CardContents member={member}/>
     ))}
 </Cards>
 
@@ -89,13 +72,7 @@ import { alumni } from './team.js';
 
 <Cards>
     {alumni.map( (member) => (
-        <Card
-            image
-            arrow
-            title={member.name}
-            href={`/five-bike/${member.nickname}`}
-        >
-        </Card>
+        <CardContents member={member}/>
     ))}
 </Cards>
 
