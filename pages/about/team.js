@@ -1,21 +1,7 @@
-interface Person {
-  nickname: string;
-  name: string;
-  email: string;
-  links: {
-    website?: string;
-    twitter?: string; 
-    linkedin?: string;
-    github?: string;
-    'google-scholar'?: string;
-  };
-  title: string;
-}
-
-export const people: Person[] = [
+export const people = [
   {
     nickname: "jaan",
-    name: "Jaan Altosaar",
+    name: "Jaan Altosaar", 
     email: "jaan@onefact.org",
     links: {
       website: "https://jaan.io",
@@ -113,7 +99,7 @@ export const people: Person[] = [
     title: "Chief of Global Health Informatics"
   },
   {
-    nickname: "alex", 
+    nickname: "alex",
     name: "Alex Hradecky",
     email: "alex@onefact.org",
     links: {
@@ -136,11 +122,11 @@ export const people: Person[] = [
     email: "susan@onefact.org",
     links: {
       twitter: "https://twitter.com/semerriam",
-      linkedin: "https://www.linkedin.com/in/susan-merriam/" 
+      linkedin: "https://www.linkedin.com/in/susan-merriam/"
     },
     title: "Journalism Lead, Payless Health"
   },
-  {
+  {  
     nickname: "maxim",
     name: "Maxim Zaslavsky",
     email: "maxim@onefact.org",
@@ -176,7 +162,7 @@ export const people: Person[] = [
     name: "Hope Sutherland",
     email: "hope@onefact.org",
     links: {
-      linkedin: "https://www.linkedin.com/in/sopehutherland/"
+      linkedin: "https://www.linkedin.com/in/sopehutherland/" 
     },
     title: "Climate Lead, Data Thinking"
   },
@@ -211,7 +197,7 @@ export const people: Person[] = [
   }
 ];
 
-export const community: Person[] = [
+export const community = [
   {
     nickname: "mari",
     name: "Mari Agory",
@@ -224,7 +210,7 @@ export const community: Person[] = [
   {
     nickname: "prem",
     name: "Prem Pariyar",
-    email: "",
+    email: "", 
     links: {
       linkedin: "https://www.linkedin.com/in/prem-pariyar-msw-asw-800119aa/"
     },
@@ -232,7 +218,7 @@ export const community: Person[] = [
   }
 ];
 
-export const board: Person[] = [
+export const board = [
   {
     nickname: "joanne",
     name: "Joanne Wu",
@@ -266,7 +252,7 @@ export const board: Person[] = [
     title: "Professor, University of Maryland"
   },
   {
-    nickname: "steve-hayes",
+    nickname: "steve-hayes", 
     name: "Steve Hayes",
     email: "",
     links: {
@@ -327,15 +313,15 @@ export const board: Person[] = [
   {
     nickname: "steve-winslow",
     name: "Steve Winslow",
-    email: "",
+    email: "", 
     links: {
       linkedin: "https://www.linkedin.com/in/stephen-winslow-5384167a/"
-    }, 
+    },
     title: "Counsel, Boston Technology Law"
   }
 ];
 
-export const alumni: Person[] = [
+export const alumni = [
   {
     nickname: "joyce",
     name: "Joyce Alonzo Gorospe",
@@ -368,7 +354,7 @@ export const alumni: Person[] = [
     name: "Kakuyon Mataeh",
     email: "",
     links: {
-      linkedin: "https://www.linkedin.com/in/kakuyonmataeh/"  
+      linkedin: "https://www.linkedin.com/in/kakuyonmataeh/"
     },
     title: "Chief Cartographer"
   },
@@ -443,5 +429,5 @@ export const alumni: Person[] = [
       twitter: "https://twitter.com/uanenimd"
     },
     title: "Professor, Yale School of Medicine"
-  }
+  }  
 ];
