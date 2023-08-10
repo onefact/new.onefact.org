@@ -7,17 +7,32 @@ We are an official charity partner of the TD Five Boro Bike Tour; see our logo h
 
 ## Team pages
 
-* [Aaron](/five-boro-bike-tour/aaron)
-* [Alex](/five-boro-bike-tour/alex)
-* [Amy](/five-boro-bike-tour/amy)
-* [Andrew](/five-boro-bike-tour/andrew)
-* [Charlie](/five-boro-bike-tour/charlie)
-* [Elizabeth](/five-boro-bike-tour/elizabeth)
-* [Ellen](/five-boro-bike-tour/ellen)
-* [Evelyn](/five-boro-bike-tour/evelyn)
-* [Jaan](/five-boro-bike-tour/jaan)
-* [Kevin](/five-boro-bike-tour/kevin)
-* [Shelly](/five-boro-bike-tour/shelly)
-* [Swapneel](/five-boro-bike-tour/swapneel)
-* [Yili](/five-boro-bike-tour/yili)
-* [Zixiao](/five-boro-bike-tour/zixiao)
+import { Card, Cards } from 'nextra/components';
+
+<Cards>
+    {[
+        'aaron',
+        'alex',
+        'amy',
+        'andrew',
+        'charlie',
+        'elizabeth',
+        'ellen',
+        'evelyn',
+        'kate',
+        'jaan',
+        'kevin',
+        'michele',
+        'shelly',
+        'swapneel',
+        'yili',
+        'zixiao'
+    ].map( (nickname) => (
+        <Card
+            arrow
+            title={nickname}
+            href={`/five-boro/${nickname}`}
+        >
+        </Card>
+    ))}
+</Cards>

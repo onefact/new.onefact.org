@@ -1,6 +1,6 @@
 import { Card } from 'nextra/components';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const ImageWithHideOnError = (props) => {
     const [hideImage, setHideImage] = useState(false);
@@ -18,12 +18,21 @@ const ImageWithHideOnError = (props) => {
 };
 
 export const CardContents = ({ member }) => {
+    const [link, setLink] = useState();
+
+    useEffect(() => {
+        if (member.links) {
+            const link_key = Object.keys(member.links)[0];
+            setLink(member.links[link_key]);
+        }
+    }, []);
+    
     return (
         <Card
             image
             arrow
             title={member.name}
-            href={`/five-bike/${member.nickname}`}
+            href={link ? link : '/about#team'}
         >
             <ImageWithHideOnError
                 src={`/images/${member.nickname}.jpg`}
