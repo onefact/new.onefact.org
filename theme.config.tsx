@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
+import Link from 'next/link'
 
 const logo = (
   <span>
@@ -162,6 +163,15 @@ const config: DocsThemeConfig = {
           © {new Date().getFullYear()} The Nextra Project.
         </p>
       </div>
+    )
+  },
+  toc: {
+    extraContent: (
+      <>
+          <p className="subtitle">
+              <Link className="cta" href="/support">Donate <span>→</span></Link>
+          </p>
+      </>
     )
   }
 }
