@@ -1,5 +1,5 @@
 ---
-title: Nextra – Next.js Static Site Generator
+title: onefact.org
 ---
 
 import { Feature, Features } from '@components/features'
@@ -100,10 +100,16 @@ export function I18n() {
 
 <div className="home-content">
   <div className="content-container">
-    <h1 className="headline">Make beautiful websites <br className='sm:block hidden'/>with Next.js & MDX.</h1>
-    <p className="subtitle">Simple, powerful and flexible site generation framework <br className='sm:block hidden'/>with everything you love from <a className="nextjs-link" href="https://nextjs.org" target="_blank">Next.js</a>.</p>
+    <h1 className="headline">We transform healthcare <br className='sm:block hidden'/>
+      access & efficiency <br className='sm:block hidden'/>
+      using open source AI.<br className='sm:block hidden'/></h1>
+    <p className="subtitle">Our non-profit structure allows our partners, such as the **National Institutes of Health** and **Harvard Medical School**, <br className='sm:block hidden'/>
+      to grant access to the health data needed to build, train, and deploy our AI engine, ClinicalBERT. <br className='sm:block hidden'/>
+      Releasing and conducting research using this open source AI means we can require enterprises using our tech <br className='sm:block hidden'/>
+      to validate their deployments of our model against **state-of-the-art** health equity metrics.</p>
     <p className="subtitle">
-      <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
+      <Link className={styles.cta} href="/about">Learn more <span>→</span></Link>
+      <Link className={styles.cta} href="/support" style={{marginLeft: '2rem'}}>Donate <span>→</span></Link>
     </p>
   </div>
   <style jsx>{`
@@ -303,61 +309,15 @@ export function I18n() {
   <div className="features-container">
     <div className="content-container">
       <Features>
-        <Feature index={0} large centered id="docs-card" href="/docs/docs-theme/start">
-          <Image src={docsCard} alt="Background" loading="eager" />
-          <Image src={docsCardDark} alt="Background (Dark)" loading="eager" />
-          <h3>Full-power documentation <br className="show-on-mobile"/>in minutes.</h3>
+        <Feature index={2} href="/docs/guide/syntax-highlighting">
+          <h3>Payless Health.</h3>
+          <p>From patients to doctors, Payless.health is a free platform to help you understand how much you will pay.
+            We are currently building the search engine and data platform.
+            In the meantime, you can [view the help pages](https://help.payless.health/).</p>
         </Feature>
-        <Feature index={1} centered className="card-with-border" href="/docs/guide/image">
-          <div className="h-full flex flex-col justify-between">
-            <h3>Links and images are <br className="show-on-mobile"/>always <span style={{ fontWeight: 300 }}>optimized</span>.</h3>
-            <p className='text-left mb-8'>Nextra automatically converts Markdown links and images to use [Next.js Link](https://nextjs.org/docs/routing/introduction#linking-between-pages) and [Next.js Image](https://nextjs.org/docs/basic-features/image-optimization#local-images) when possible. No slow navigation or layout shift.</p>
-            <div>
-              <div className={styles.optimization}>
-                <div style={{ fontSize: '.9rem' }} className="leading-8">
-                  <code>{`[Learn more](/more)`}</code>
-                  <br/>
-                  <code>{`![Hero](/hero.png)`}</code>
-                </div>
-              </div>
-              <ArrowRightIcon width="1.2em" className="text-neutral-400 rotate-90 my-6 mx-auto" />
-              <div className={styles.optimization}>
-                <div style={{ fontSize: '.9rem' }} className="leading-8">
-                  <code>{`<Link .../>`}</code>
-                  <br/>
-                  <code>{`<Image .../>`}</code>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Feature>
-        <Feature index={2} id="highlighting-card" href="/docs/guide/syntax-highlighting">
-          <h3>Advanced syntax <br className="show-on-mobile"/>highlighting solution.</h3>
-          <p>Performant and reliable build-time syntax highlighting powered by [Shiki](https://shiki.matsu.io).</p>
-        </Feature>
-        <Feature index={3} href="/docs/guide/i18n">
-          <h3>I18n as easy as <br className="show-on-mobile"/>creating new files.</h3>
-          <p className='mb-4'>Name your page files with locales suffixed, Nextra and Next.js will do the rest for you.</p>
-          <I18n/>
-        </Feature>
-        <Feature index={4} centered style={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          justifyContent: 'center',
-          backgroundImage: 'url(/assets/gradient-bg.jpeg)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          color: '#fff'
-        }} href="/docs/guide/markdown">
-          <svg width="70%" viewBox="0 0 69 29" fill="none" xmlns="http://www.w3.org/2000/svg" style={{
-            filter: 'drop-shadow(0 2px 10px rgba(0, 0, 0, .1))'
-          }}>
-            <path fillRule="evenodd" clipRule="evenodd" d="M66.375 0.375H2.625C1.38236 0.375 0.375 1.38236 0.375 2.625V25.875C0.375 27.1176 1.38236 28.125 2.625 28.125H66.375C67.6176 28.125 68.625 27.1176 68.625 25.875V2.625C68.625 1.38236 67.6176 0.375 66.375 0.375ZM23.625 5.75368V9.375V21.875H20.625V12.9963L16.1857 17.4357L15.125 18.4963L14.0643 17.4357L9.75 13.1213V22H6.75V9.5V5.87868L9.31066 8.43934L15.125 14.2537L21.0643 8.31434L23.625 5.75368ZM29.5607 12.5643L33.75 16.7537V5.375H36.75V16.7537L40.9393 12.5643L43.0607 14.6857L36.3107 21.4357L35.25 22.4963L34.1893 21.4357L27.4393 14.6857L29.5607 12.5643ZM62.3105 19.5592L56.1228 13.3736L62.4357 7.06066L60.3143 4.93934L54.0011 11.2526L47.6855 4.93916L45.5645 7.06084L51.8798 13.3739L45.6893 19.5643L47.8107 21.6857L54.0014 15.4949L60.1895 21.6808L62.3105 19.5592Z" fill="#fff"/>
-          </svg>
-          <p style={{
-            textShadow: '0 2px 4px rgb(0 0 0 / 20%)'
-          }}><a href="https://mdxjs.com/blog/v2" target="_blank" style={{ color: 'currentColor' }}>MDX 2</a> lets you use Components inside Markdown, <br className="hide-medium"/>with huge performance boost since v1.</p>
+        <Feature index={3} id="highlighting-card" href="https://www.datathinking.org/">
+          <h3>Data Thinking.</h3>
+          <p className='mb-4'>Data sucks. We teach you to suck less.</p>
         </Feature>
         <Feature index={5} centered className="feat-darkmode" style={{
           display: 'flex',
@@ -412,7 +372,7 @@ export function I18n() {
               position: 'relative',
               mixBlendMode: 'difference',
             }}
-          >Dark <br/>mode <br/>included.</motion.h3>
+          >Powered by <br /> AI for health.</motion.h3>
         </Feature>
         <Feature index={6} large id="search-card" href="/docs/docs-theme/theme-configuration#search">
           <div style={{ zIndex: 2}}>

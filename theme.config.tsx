@@ -1,6 +1,7 @@
 import { useRouter } from 'next/router'
 import type { DocsThemeConfig } from 'nextra-theme-docs'
 import { useConfig } from 'nextra-theme-docs'
+import Link from 'next/link'
 
 const logo = (
   <span>
@@ -52,7 +53,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter()
     if (asPath !== '/') {
       return {
-        titleTemplate: '%s – Nextra'
+        titleTemplate: '%s – One Fact'
       }
     }
   },
@@ -85,7 +86,7 @@ const config: DocsThemeConfig = {
         <meta name="twitter:url" content="https://nextra.site" />
         <meta
           name="og:title"
-          content={title ? title + ' – Nextra' : 'Nextra'}
+          content={title ? title + ' – One Fact' : 'One Fact'}
         />
         <meta name="og:image" content={socialCard} />
         <meta name="apple-mobile-web-app-title" content="Nextra" />
@@ -114,6 +115,12 @@ const config: DocsThemeConfig = {
   //     </a>
   //   )
   // },
+  chat: {
+    link: 'https://onefact.zulipchat.com/'
+  },
+  search: {
+    placeholder: 'Search'
+  },
   editLink: {
     text: 'Edit this page on GitHub →'
   },
@@ -156,6 +163,15 @@ const config: DocsThemeConfig = {
           © {new Date().getFullYear()} The Nextra Project.
         </p>
       </div>
+    )
+  },
+  toc: {
+    extraContent: (
+      <>
+          <p className="subtitle">
+              <Link className="cta" href="/support">Donate <span>→</span></Link>
+          </p>
+      </>
     )
   }
 }
